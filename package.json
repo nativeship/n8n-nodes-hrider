@@ -1,0 +1,66 @@
+{
+  "author": {
+    "email": "hello@nativeship.io",
+    "name": "nativeship",
+    "url": "https://github.com/nativeship"
+  },
+  "description": "HRider helps teams manage performance reviews, 360-degree feedback, and people analytics",
+  "devDependencies": {
+    "@n8n/node-cli": "0.41.2",
+    "@types/node": "22.15.29",
+    "eslint": "9.29.0",
+    "prettier": "3.6.2",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": "\u003e=22.22.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/nativeship/n8n-nodes-hrider",
+  "keywords": [
+    "n8n-community-node-package",
+    "nativeship",
+    "nativeship-nodes",
+    "n8n",
+    "hrider",
+    "n8n-node",
+    "performance-reviews",
+    "employee-feedback",
+    "talent-management",
+    "people-analytics"
+  ],
+  "license": "MIT",
+  "n8n": {
+    "credentials": [
+      "dist/credentials/HriderApi.credentials.js"
+    ],
+    "n8nNodesApiVersion": 1,
+    "nodes": [
+      "dist/nodes/Hrider/Hrider.node.js"
+    ],
+    "strict": true
+  },
+  "name": "@nativeship/n8n-nodes-hrider",
+  "nativeShip": {
+    "artifactSha256": "6e9efdb2684f0332cc5735c0f3ab48248b2fe28caa01d96aed4d44a16741e599"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nativeship/n8n-nodes-hrider.git"
+  },
+  "scripts": {
+    "build": "n8n-node build",
+    "dev": "n8n-node dev",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix"
+  },
+  "version": "1.0.0"
+}
